@@ -1,0 +1,13 @@
+<h1>News</h1>
+
+<ul class="Posts">
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.title %>
+      <%= post.created_at %>
+      <%= post.content %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

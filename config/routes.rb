@@ -1,6 +1,7 @@
-StoneRisingFestival::Application.routes.draw do
+StoneRisingFestival::Application.routes.draw do  
+  resources :posts
   
-  root to: 'static_pages#bands'
+  root to: 'posts#index'
   
   match '/bands',    to: 'static_pages#bands'
   match '/infos',    to: 'static_pages#infos'
