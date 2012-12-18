@@ -1,4 +1,13 @@
 StoneRisingFestival::Application.routes.draw do
+  
+  root to: 'static_pages#bands'
+  
+  match '/bands',    to: 'static_pages#bands'
+  match '/infos',    to: 'static_pages#infos'
+  match '/partners',    to: 'static_pages#partners'
+  match '/contact',    to: 'static_pages#contact'
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
