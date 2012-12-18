@@ -1,12 +1,8 @@
 <h1>News</h1>
 
-<ul class="Posts">
+<ul class="posts">
   <% @posts.each do |post| %>
-    <li>
-      <%= post.title %>
-      <%= post.created_at %>
-      <%= post.content %>
-    </li>
+    <%= render post %>
   <% end %>
 </ul>
 
