@@ -81,6 +81,14 @@ p {
   }
 }
 
+#banner {
+  background-color: black;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #222;
+}
+
 /* footer */
 
 footer {
@@ -96,6 +104,7 @@ footer {
   }  
   small { 
     float: left; 
+    margin-left: 60px;
   }
   ul {
     float: right;
